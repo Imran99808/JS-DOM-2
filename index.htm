@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task" />
+            <input type="submit" onclick="addTask()" id="addTask" value="Add Task" /> 
+            <!-- <button id="addTask" onclick="addTask()">add task</button> -->
+          </form>
+        <div class="todo-list box">
+            <h2>Incomplete task</h2>
+            <ul id="items">
+                <li class="item">
+               <input type="checkbox"> <label>Task Name</label>   
+                </li>
+                <li class="item">
+               <input type="checkbox"> <label>Task Name</label>   
+
+                </li>
+                <li class="item">
+               <input type="checkbox"> <label>Task Name</label>   
+
+                </li>
+            </ul>
+          
+        </div>
+
+        <div class="compelete-list box">
+            <h2>Complete Tasks</h2>
+            <ul>
+                <li class="item">Task Name <button class="delete">Delete</button></li>
+            </ul>
+        </div>
+       
+    </section>
+    <script src="h.js"></script>
+    
+</body>
+</html>
